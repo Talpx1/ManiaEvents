@@ -18,17 +18,6 @@ class User extends Authenticatable implements FilamentUser {
     use HasFactory, HasRoles, LogsAllDirtyChanges, Notifiable;
 
     /**
-     * The attributes that are mass assignable.
-     *
-     * @var list<string>
-     */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
-
-    /**
      * The attributes that should be hidden for serialization.
      *
      * @var list<string>
@@ -36,6 +25,11 @@ class User extends Authenticatable implements FilamentUser {
     protected $hidden = [
         'password',
         'remember_token',
+        'ubisoft_id',
+        'ubisoft_access_token',
+        'ubisoft_refresh_token',
+        'ubisoft_token_expires_at',
+        'ubisoft_token_scope',
     ];
 
     /**
@@ -47,6 +41,9 @@ class User extends Authenticatable implements FilamentUser {
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'ubisoft_access_token' => 'hashed',
+            'ubisoft_refresh_token' => 'hashed',
+            'ubisoft_token_expires_at' => 'immutable_datetime',
         ];
     }
 

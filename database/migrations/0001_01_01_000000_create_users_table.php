@@ -13,10 +13,16 @@ return new class extends Migration {
     public function up(): void {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('username')->unique();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('ubisoft_id')->unique();
+            $table->string('ubisoft_username');
+            $table->string('ubisoft_access_token');
+            $table->string('ubisoft_refresh_token');
+            $table->string('ubisoft_token_expires_at');
+            $table->string('ubisoft_token_scope');
             $table->rememberToken();
             $table->timestamps();
         });
