@@ -19,7 +19,6 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-use LaraZeus\SpatieTranslatable\SpatieTranslatablePlugin;
 
 class GaragePanelProvider extends PanelProvider {
     public function panel(Panel $panel): Panel {
@@ -44,7 +43,6 @@ class GaragePanelProvider extends PanelProvider {
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
             ])
-            ->authMiddleware([Authenticate::class])
-            ->plugin(SpatieTranslatablePlugin::make()->defaultLocales(['it', 'en']));
+            ->authMiddleware([Authenticate::class]);
     }
 }
