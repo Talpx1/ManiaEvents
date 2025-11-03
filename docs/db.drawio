@@ -434,8 +434,9 @@
                         <Array as="points">
                             <mxPoint x="-80" y="-45"/>
                             <mxPoint x="-80" y="360"/>
-                            <mxPoint x="520" y="360"/>
-                            <mxPoint x="520" y="240"/>
+                            <mxPoint x="510" y="360"/>
+                            <mxPoint x="510" y="300"/>
+                            <mxPoint x="510" y="240"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -588,7 +589,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="200" value="&lt;ul&gt;&lt;li&gt;PK: primary key&lt;/li&gt;&lt;li&gt;FK: foreign key&lt;/li&gt;&lt;li&gt;MC: morphable column&lt;/li&gt;&lt;/ul&gt;" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#0071D5;html=1;whiteSpace=wrap;fillColor=#0085FC;fontColor=#ffffff;verticalAlign=bottom;align=left;spacing=20;spacingBottom=0;fontSize=14;" parent="1" vertex="1">
-                    <mxGeometry x="225" y="-410" width="250" height="180" as="geometry"/>
+                    <mxGeometry x="260" y="-410" width="250" height="180" as="geometry"/>
                 </mxCell>
                 <mxCell id="201" value="Mania Event DB Design" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.topButton;rSize=5;perimeter=none;whiteSpace=wrap;fillColor=#0081F4;strokeColor=#0071D5;fontColor=#ffffff;resizeWidth=1;fontSize=18;align=left;spacing=20;" parent="200" vertex="1">
                     <mxGeometry width="250" height="50" relative="1" as="geometry"/>
