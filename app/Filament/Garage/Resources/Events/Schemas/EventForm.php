@@ -49,7 +49,7 @@ class EventForm {
                     ->label(__('Description'))
                     ->required()
                     ->toolbarButtons([
-                        ['bold', 'italic', 'underline', 'strike', 'subscript', 'superscript', 'blockquote'],
+                        ['bold', 'italic', 'underline', 'strike', 'subscript', 'superscript', 'blockquote', 'bulletList', 'orderedList', 'textColor'],
                         ['undo', 'redo'],
                     ]),
 
