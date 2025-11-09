@@ -28,6 +28,15 @@ _Provide a clear and concise description of what you expected to happen._
 **Screenshots:**
 _If applicable, add screenshots to help explain your problem._
 
+**URL:**
+_If applicable, specify the URL (link) where the unexpected behavior happens._
+
+**Error message/code:**
+_If applicable, specify the error message and/or code._
+
+**Stacktrace:**
+_If applicable, paste the error stacktrace. Please pay attention to redact sensible information._
+
 **Device:**
  - Device: [e.g. PC, iPhone X, ...]
  - OS (please include the version): [e.g. Windows 11, iOS 26, ...]
