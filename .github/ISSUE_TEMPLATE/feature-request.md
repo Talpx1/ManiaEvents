@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Please, write your content replacing the hints contained in `<angle brackets>`. In case theres nothing to write or the section does not apply, just write _"Nothing"_ or _"Doesn't apply"_.   
+Please, write your content replacing the hints contained in <angle brackets>. In case theres nothing to write or the section does not apply, just write "Nothing" or "Doesn't apply".   
 **Remove this introduction before submitting.**  
 Thanks.  
 
@@ -26,7 +26,7 @@ Thanks.
 **Related / duplicates:** 
 <Links to existing issues if any, be sure to have specified why a duplicate/related is needed>
 
-**Mockups / attachments:**
+**Mockups / attachments: **
 <Optional — images, sketches, links>
 
 **Detailed description:**
