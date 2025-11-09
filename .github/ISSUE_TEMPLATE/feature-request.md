@@ -7,27 +7,27 @@ assignees: ''
 
 ---
 
-Please, write your content replacing the hints contained in <angle brackets>. In case theres nothing to write or the section does not apply, just write "Nothing" or "Doesn't apply".   
+Please, write your content replacing the hints written in _italic_. In case there's nothing to write or the section does not apply, just write "Nothing" or "Doesn't apply".   
 **Remove this introduction before submitting.**  
 Thanks.  
 
 **What:**   
-<Short description of the feature/idea>
+_Short description of the feature/idea_
 
 **Why:**  
-<Why this is useful / who benefits>
+_Why this is useful / who benefits_
 
 **How (proposal):**  
-<High-level idea of how it should work>
+_High-level idea of how it should work_
 
 **Edge cases / risks:**  
-<Any concerns or technical/legal issues>
+_Any concerns or technical/legal issues_
 
 **Related / duplicates:** 
-<Links to existing issues if any, be sure to have specified why a duplicate/related is needed>
+_Links to existing issues if any, be sure to have specified why a duplicate/related is needed_
 
-**Mockups / attachments: **
-<Optional — images, sketches, links>
+**Mockups / attachments:**
+_Optional — images, sketches, links_
 
 **Detailed description:**
-<Optional, if the subject is clear with the info provided in the previous sections>
+_Optional, if the subject is clear with the info provided in the previous sections_
