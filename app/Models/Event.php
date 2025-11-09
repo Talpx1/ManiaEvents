@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Facades\Storage;
 
 class Event extends Model {
     /** @use HasFactory<\Database\Factories\EventFactory> */
@@ -38,6 +39,9 @@ class Event extends Model {
         return $this->belongsTo(User::class, 'creator_id');
     }
 
+    /**
+     * @return Attribute<bool, never>
+     */
     protected function acceptsSubscriptions(): Attribute {
         return Attribute::get(function () {
             if (! $this->status->allowSubscriptions()) {
@@ -46,5 +50,12 @@ class Event extends Model {
 
             return ($this->open_subscriptions_at?->isPast() ?? true) && ($this->close_subscriptions_at?->isFuture() ?? true);
         });
+    }
+
+    /**
+     * @return Attribute<string, never>
+     */
+    protected function featuredImageUrl(): Attribute {
+        return Attribute::get(fn () => Storage::disk(config()->string('event.featured_image.disk'))->url($this->featured_image_path));
     }
 }

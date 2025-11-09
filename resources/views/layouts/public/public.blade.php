@@ -39,7 +39,7 @@
             <x-layout::public.header />
         @endif
 
-        <main>
+        <main class="my-8">
             {{ $slot }}
         </main>
 
