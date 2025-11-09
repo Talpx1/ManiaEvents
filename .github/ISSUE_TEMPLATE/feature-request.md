@@ -31,3 +31,7 @@ _Optional — images, sketches, links_
 
 **Detailed description:**
 _Optional, if the subject is clear with the info provided in the previous sections_
+
+**Privacy/Legal check**
+I have verified this does not conflict with Trackmania / Nadeo / Ubisoft EULA: _yes/no_
+_(If unsure, explain what part of the EULA you're worried about. If the answer is no, please select the "needs eula check" label.)_
