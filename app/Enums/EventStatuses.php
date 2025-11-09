@@ -33,4 +33,11 @@ enum EventStatuses: string implements HasColor, HasDescription, HasLabel {
             self::ARCHIVED => Color::Gray,
         };
     }
+
+    public function allowSubscriptions(): bool {
+        return match ($this) {
+            self::DRAFT, self::ENDED, self::ARCHIVED => false,
+            self::PLANNED, self::STARTED => true,
+        };
+    }
 }

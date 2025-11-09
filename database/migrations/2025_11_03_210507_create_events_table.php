@@ -13,8 +13,9 @@ return new class extends Migration {
     public function up(): void {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('slug');
+            $table->string('title')->unique();
+            $table->string('slug')->unique();
+            $table->text('short_description');
             $table->text('description');
             $table->string('featured_image_path')->unique();
             $table->timestamp('begins_at');

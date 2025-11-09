@@ -17,12 +17,12 @@ return new class extends Migration {
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('ubisoft_id')->unique();
-            $table->string('ubisoft_username');
-            $table->string('ubisoft_access_token');
-            $table->string('ubisoft_refresh_token');
-            $table->string('ubisoft_token_expires_at');
-            $table->string('ubisoft_token_scope');
+            $table->string('ubisoft_id')->nullable()->unique();
+            $table->string('ubisoft_username')->nullable();
+            $table->string('ubisoft_access_token')->nullable();
+            $table->string('ubisoft_refresh_token')->nullable();
+            $table->string('ubisoft_token_expires_at')->nullable();
+            $table->string('ubisoft_token_scope')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
