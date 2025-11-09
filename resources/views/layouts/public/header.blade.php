@@ -1,4 +1,5 @@
-<header class="flex justify-between items-center sticky top-0 z-999 h-[100px] min-h-[100px] max-h-[100px]">
+<header
+    class="flex justify-between items-center sticky top-0 z-999 h-[100px] min-h-[100px] max-h-[100px] bg-light border-b-2 border-dark">
 
     <a href="{{ route('home') }}" wire:navigate>
         <x-app-logo class="max-h-[90px]" />
